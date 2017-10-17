@@ -8,3 +8,4 @@ function vowel(str) {
 }
 
 console.log(vowel('uaua'));
+console.log(vowel('usua'));
