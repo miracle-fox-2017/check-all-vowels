@@ -1,13 +1,15 @@
-'use strict'
-
-let checkVowel = (input)=>{
-  let vowel = 'aiueo'
-  for(let i = 0; i < input.length; i++){
-    if(vowel.indexOf(input[i])===-1){
-      return false
+let cekTrue = (set) => {
+  let setArr = ['a', 'i', 'u', 'e', 'o'];
+  let jumlah = 0;
+  for (let i = 0; i < set.length; i++) {
+    for (let j = 0; j < setArr.length; j++) {
+      if (set[i] === setArr[j]) {
+        jumlah++;
+      }
     }
   }
-  return true
+  return (jumlah === set.length ? true : false);
 }
 
-console.log(checkVowel('aqrstukaeifooo'))
+console.log(cekTrue('aaaaaaaa'));
+console.log(cekTrue('aaaabcaaa'));
