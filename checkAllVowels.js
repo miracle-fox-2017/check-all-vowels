@@ -13,3 +13,4 @@ function checkVowel(str){
 }
 
 console.log(checkVowel('babi'))
+console.log(checkVowel('aiueo'))
